@@ -2,5 +2,6 @@
 
 rm -rf out/assets/ && cp -r assets/ out/assets
 rm -f out/application.css && sass out/assets/stylesheets/application.scss > out/application.css
-rm -rf out/index.html && cp index.html out/index.html
+rm -rf out/index.*.html && ./interpolate index.html
+rm -rf out/index.html && ln out/index.en.html out/index.html
 

@@ -1,0 +1,11 @@
+#! /usr/bin/env ruby
+
+require 'i18n'
+
+I18n.load_path << Dir[File.expand_path("config/locales") + "*.yml"]
+
+text = $<.read
+I18n.available_locales.each do |locale|
+  localized_text = text.gsub(/#\{([^}]*?)\}/) { I18n.t($1, locale: locale) }
+  File.write("out/index.#{locale}.html", localized_text)
+end

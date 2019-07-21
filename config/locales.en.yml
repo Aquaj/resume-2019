@@ -1,0 +1,80 @@
+en:
+  page_title: "Resumé — Jérémie Bonal"
+  education:
+    bachelor: "Bachelor degree in Computer Science — University of Bordeaux I"
+    bootcamp: "Web development and Entrepreneurship Bootcamp — Le Wagon"
+  experience:
+    ekylibre:
+      description:
+        Ekylibre — Farm Management Information System<br>
+        SaaS platform — Open Source — 3 web-based products + 2 mobile apps<br>
+        10yo project — 230 models — 260 controllers — 75k LOC
+      developer:
+        period: "2016 — early 2018"
+        title: "Developer"
+      cto:
+        period: "early 2018 — present"
+        title: "CTO"
+      result:
+        agile_processes: "Helped set up Agile processes across the company."
+        app_rewrite: "Contributed to a full rewrite of the main app."
+        coverage_tracking: "Set up coverage tracking."
+        db_migration: "Planned and executed a major restructuring of the main database."
+        process_rewrite: "Rewrote engineering processes to improve delivery speed."
+        replica_backups: "Set up DB replicas and automatic backups."
+        server_automation: "Automated server deployment and config."
+      task:
+        devops: "DevOps and SysAdmin responsibilities."
+        communication_partners: "Communication with business and technical partners."
+        feature_design: "Collaboration on feature design."
+        feature_development: "Feature development and testing."
+        outsourcing_supervision: "Management of outsourced development."
+        team_management: "Management of a developer team of 8 developers."
+        technical_direction: "Decision-taking regarding the direction of technical projects."
+  interest:
+    header: "Interests include:"
+    cooking: "Cooking"
+    design: "Design"
+    languages: "Languages"
+    philosophy: "Philosophy"
+    science: "Science"
+  project:
+    title: "Projects and Contributions"
+    blog:
+      first_study: "Started compiling article ideas mid 2017."
+      start_date: "Started posting on Medium early 2018."
+      current_state: "Currently migrating to self-hosted blog (<a href=\"https://principleofexplosion.com\">PrincipleofExplosion</a>)"
+    ruby:
+      start_date: "Started exploring the Ruby codebase mid-2019."
+      first_contribution: "First issue opened on the Ruby bug tracker mid-2019 (<a href=\"https://bugs.ruby-lang.org/issues/15991\">#15991</a>)"
+    rails:
+      first_study: "Started using Rails late 2015."
+      first_contribution: "First PR and contribution late 2017 (<a href=\"https://github.com/rails/rails/pull/31578\">#31578</a>)"
+      start_date: "Started exploring the Rails codebase late 2016"
+  testimonials:
+    paul:
+      author: "Paul, colleague"
+      quote: "Your dedication to keep learning, even outsidfe of programming, is inspiring, really."
+    rando:
+      author: "Some random person on a Slack #help channel"
+      quote: "Oh thank god it works! You just saved my life, I def owe you a beer sometime."
+    sylvain:
+      author: "Sylvain, former teacher at Le Wagon"
+      quote: "If he keeps going the way he's headed, no doubt he'll be a better developer than me in a couple of years."
+  alt:
+    education:
+      bordeaux1: "University of Bordeaux 1's logo"
+      wagon: "Le Wagon's Logo"
+    profile_pic: "A headshot of Jérémie, a blonde white man with a ginger beard. He's in his twenties and wears glasses with a rounded frame. He's on a neutral background and wears a light-blue shirt."
+    projects:
+      blog: "Principle of Explosion's logo"
+      rails: "Ruby on Rails's logo"
+      ruby: "Ruby's logo"
+    tech:
+      git: "Git's logo"
+      js: "Javascript's logo"
+      postgresql: "Postgresql's logo"
+      rails: "Ruby on Rails's logo"
+      ruby: "Ruby's logo"
+      sass: "Sass's logo"
+

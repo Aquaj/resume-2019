@@ -1,0 +1,80 @@
+fr:
+  page_title: "CV — Jérémie Bonal"
+  education:
+    bachelor: "Licence en Informatique — Université de Bordeaux 1"
+    bootcamp: "Bootcamp en développement web et entreprenariat — Le Wagon"
+  experience:
+    ekylibre:
+      description:
+        Ekylibre — Système informatique de gestion d'exploitation agricole<br>
+        Plateforme SaaS — Open source — 3 applis web + 2 applis mobile<br>
+        Project vieux de 10 ans — 230 modèles — 260 controllers — 75k LOC
+      developer:
+        period: "2016 — début 2018"
+        title: "Développeur"
+      cto:
+        period: "early 2018 — present"
+        title: "Directeur Technique"
+      result:
+        agile_processes: "Aide à la mise en place des process Agiles à travers l'entreprise."
+        app_rewrite: "Contribution à la réécriture complète de l'appli."
+        coverage_tracking: "Mise en place du suivi de la couverture de test."
+        db_migration: "Plan et éxécution d'une restructuration importante de la DB principale."
+        process_rewrite: "Réécriture des process pour livrer plus vite."
+        replica_backups: "Mise en place de backups et de réplicas de DB."
+        server_automation: "Automatisation des déploiements et config serveur."
+      task:
+        devops: "Résponsabilités DevOps et SysAdmin."
+        communication_partners: "Échanges avec les partenaires techniques et commerciaux."
+        feature_design: "Collaboration sur le design des features."
+        feature_development: "Développement et test de features."
+        outsourcing_supervision: "Gestion des équipes outsourcées."
+        team_management: "Management d'une équipe de 8 développeurs."
+        technical_direction: "Decision-taking regarding the direction of technical projects."
+  interest:
+    header: "Centres d'intérêts :"
+    cooking: "Cuisine"
+    design: "Design"
+    languages: "Langues"
+    philosophy: "Philosophie"
+    science: "Science"
+  project:
+    title: "Projets et Contributions"
+    blog:
+      first_study: "Compilation d'idées d'articles depuis 2017."
+      start_date: "Posts sur Medium depuis début 2018."
+      current_state: "En cours de migration vers blog à part entière (<a href=\"https://principleofexplosion.com\">Principle&nbsp;of&nbsp;Explosion</a>)."
+    ruby:
+      start_date: "Début de découverte de la codebase Ruby courant 2019."
+      first_contribution: "Premier ticket ouvert sur le tracker Ruby courant 2019 (<a href=\"https://bugs.ruby-lang.org/issues/15991\">#15991</a>)."
+    rails:
+      first_study: "Début d'utilisation de Rails fin 2015."
+      first_contribution: "Première PR et contribution fin 2017 (<a href=\"https://github.com/rails/rails/pull/31578\">#31578</a>)."
+      start_date: "Début d'exploration de la codebase Rails fin 2016."
+  testimonials:
+    paul:
+      author: "Paul, collègue"
+      quote: "Ta motivation à apprendre sans cesse, que ça soit sur le code ou autre, est inspirante pour de vrai."
+    rando:
+      author: "Une personne random d'un channel #help sur Slac"
+      quote: "Oh thank god it works! You just saved my life, I def owe you a beer sometime."
+    sylvain:
+      author: "Sylvain, ancien professeur au Wagon"
+      quote: "S'il continue à ce rythme d'ici quelques années c'est un meilleur développeur que moi c'est sûr."
+  alt:
+    education:
+      bordeaux1: "Logo de l'University Bordeaux 1"
+      wagon: "Logo du Wagon"
+    profile_pic: "Un portrait de Jérémie, un homme blanc ayant la vingtaine. Il est blond avec une barbe rousse et porte des lunettes à monture arrondie. Il est sur un fond neutre et porte un haut bleu clair."
+    projects:
+      blog: "Logo de Principle of Explosion"
+      rails: "Logo de Ruby on Rails"
+      ruby: "Logo de Ruby"
+    tech:
+      git: "Logo de Git"
+      js: "Logo de Javascript"
+      postgresql: "Logo de Postgresql"
+      rails: "Logo de Ruby on Rails"
+      ruby: "Logo de Ruby"
+      sass: "Logo do Sass"
+

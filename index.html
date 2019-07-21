@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="application.css" />
   <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-  <title>CV — Jérémie Bonal</title>
+  <title>#{page_title}</title>
 </head>
 <body>
   <div class="identity">
@@ -22,48 +22,48 @@
     </a>
     </div>
     <div class="identity__interests">
-      Interests include:
+      #{interest.header}
       <ul class="identity__interest-box">
-        <li class="identity__interest">Languages</li>
-        <li class="identity__interest">Design</li>
-        <li class="identity__interest">Philosophy</li>
-        <li class="identity__interest">Science</li>
-        <li class="identity__interest">Cooking</li>
+        <li class="identity__interest">#{interest.languages}</li>
+        <li class="identity__interest">#{interest.design}</li>
+        <li class="identity__interest">#{interest.philosophy}</li>
+        <li class="identity__interest">#{interest.science}</li>
+        <li class="identity__interest">#{interest.cooking}</li>
       </ul>
     </div>
     <img src="assets/profile.jpg" class="identity__photo"
-                                  alt="Jérémie Bonal's profile picture" />
+                                  alt="#{alt.profile_pic}" />
   </div>
 
   <div class="technologies">
    <div class="technologies__technology">
      <img class="technologies__technology-image" src="assets/tech/git.png"
-                                      alt="Git logo" />
+                                                 alt="#{alt.tech.git}" />
      <div class="technologies__technology-name">Git</div>
    </div>
    <div class="technologies__technology">
      <img class="technologies__technology-image" src="assets/tech/postgresql.svg"
-                                      alt="Postgresql logo" />
+                                                 alt="#{alt.tech.postgresql}" />
      <div class="technologies__technology-name">Postgresql</div>
    </div>
    <div class="technologies__technology">
      <img class="technologies__technology-image" src="assets/tech/ruby.svg"
-                                      alt="Ruby logo" />
+                                                 alt="#{alt.tech.ruby}" />
      <div class="technologies__technology-name">Ruby</div>
    </div>
    <div class="technologies__technology">
      <img class="technologies__technology-image" src="assets/tech/rails.webp"
-                                      alt="Ruby on Rails logo" />
+                                                 alt="#{alt.tech.rails}" />
      <div class="technologies__technology-name">Rails</div>
    </div>
    <div class="technologies__technology">
      <img class="technologies__technology-image" src="assets/tech/sass.png"
-                                      alt="Sass logo" />
+                                                 alt="#{alt.tech.sass}" />
      <div class="technologies__technology-name">Sass</div>
    </div>
    <div class="technologies__technology">
      <img class="technologies__technology-image" src="assets/tech/js.png"
-                                      alt="JS logo" />
+                                                 alt="#{alt.tech.js}" />
      <div class="technologies__technology-name">Javascript</div>
    </div>
   </div>
@@ -71,16 +71,16 @@
   <div class="education">
     <div class="education__place">
       <img class="education__picture" src="assets/education/bordeaux1.svg"
-                                      alt="Université de Bordeaux logo" />
+                                      alt="#{alt.education.bordeaux1}" />
       <div class="education__diploma">
-        Bachelor in Computer Science — Université de Bordeaux 1
+        #{education.bachelor}
       </div>
     </div>
     <div class="education__place">
       <img class="education__picture" src="assets/education/wagon.png"
-                                      alt="Le Wagon logo" />
+                                      alt="#{alt.education.wagon}" />
       <div class="education__diploma">
-        Web Development and Entrepreneurship Bootcamp — Le Wagon Bordeaux
+        #{education.bootcamp}
       </div>
     </div>
   </div>
@@ -112,95 +112,98 @@
         <img class="experience__picture" src="assets/experience/ekylibre.png"
                                          alt="Ekylibre logo" />
         <div class="experience__description">
-          Ekylibre — Farm Management Information System<br>
-          SaaS platform — Open Source — 3 web-based products + 2 mobile apps<br>
-          10yo project — 230 models — 260 controllers — 75k LOC
+          #{experience.ekylibre.description}
         </div>
       </div>
       <div class="job">
         <div class="job__title job__title--no-transition">
-          Developer
+          #{experience.ekylibre.developer.title}
         </div>
         <div class="job__period">
-          2016 — early 2018
+          #{experience.ekylibre.developer.period}
         </div>
         <div class="job__responsibilities">
-          <span class="job__fact">Feature development</span>
-          <span class="job__fact">Collaboration to feature design</span>
-          <span class="job__fact">Supervision of outsourced developments</span>
+
+          <span class="job__fact">#{experience.ekylibre.task.feature_development}</span>
+          <span class="job__fact">#{experience.ekylibre.task.feature_design}</span>
+          <span class="job__fact">#{experience.ekylibre.task.outsourcing_supervision}</span>
         </div>
         <div class="job__results">
-          <span class="job__fact">Set up coverage tracking</span>
-          <span class="job__fact">Helped move to Agile processes within the company</span>
+          <span class="job__fact">#{experience.ekylibre.result.coverage_tracking}</span>
+          <span class="job__fact">#{experience.ekylibre.result.agile_processes}</span>
         </div>
       </div>
-      <span class="job__transition"></span>
+      <span class="job__transition">
+        <!-- Not empty! Used for the transition chevron. -->
+      </span>
       <div class="job">
         <div class="job__title">
-          CTO
+          #{experience.ekylibre.cto.title}
         </div>
         <div class="job__period">
-          early 2018 — present
+          #{experience.ekylibre.cto.period}
         </div>
         <div class="job__responsibilities">
-          <span class="job__fact">Management of a team of 7 developers</span>
-          <span class="job__fact">Formation and mentorship of junior developers</span>
-          <span class="job__fact">Exchanges with technical and commercial partners</span>
-          <span class="job__fact">Decision-making on the technical direction of projects</span>
-          <span class="job__fact">DevOps/Sysadmin responsibilities</span>
+          <span class="job__fact">#{experience.ekylibre.task.team_management}</span>
+          <span class="job__fact">#{experience.ekylibre.task.communication_partners}</span>
+          <span class="job__fact">#{experience.ekylibre.task.technical_direction}</span>
+          <span class="job__fact">#{experience.ekylibre.task.devops}</span>
         </div>
         <div class="job__results">
-          <span class="job__fact">Conducted and participated in a full application rewrite</span>
-          <span class="job__fact">Executed a migration of the DB architecture</span>
-          <span class="job__fact">Set up automation tools for server management</span>
-          <span class="job__fact">Set up database replication and backups</span>
-          <span class="job__fact">Reshaped engineering processes to ensure fast and regular delivery</span>
+          <span class="job__fact">#{experience.ekylibre.result.app_rewrite}</span>
+          <span class="job__fact">#{experience.ekylibre.result.db_migration}</span>
+          <span class="job__fact">#{experience.ekylibre.result.server_automation}</span>
+          <span class="job__fact">#{experience.ekylibre.result.replica_backups}</span>
+          <span class="job__fact">#{experience.ekylibre.result.process_rewrite}</span>
         </div>
       </div>
     </div>
   </div>
 
   <div class="projects">
-    <div class="projects__title">Projects and Contributions</div>
+    <div class="projects__title">#{project.title}</div>
     <div class="project">
        <img class="project__picture" src="assets/projects/ruby.svg"
-                                     alt="Ruby logo" />
+                                     alt="#{alt.projects.ruby}" />
       <div class="project__name">Ruby</div>
-      <span class="project__fact">- Started exploring the Ruby codebase mid-2019</span>
-      <span class="project__fact">- First issue opened on the Ruby bug tracker mid-2019
-             (<a href="https://bugs.ruby-lang.org/issues/15991">#15991</a>)</span>
+      <span class="project__fact">- #{project.ruby.start_date}</span>
+      <span class="project__fact">- #{project.ruby.first_contribution}</span>
     </div>
     <div class="project">
        <img class="project__picture" src="assets/projects/principleofexplosion.png"
-                                     alt="Principle of Explosion logo" />
+                                     alt="#{alt.projects.blog}" />
       <div class="project__name">Blog</div>
-      <span class="project__fact">- Started compiling blogging ideas mid 2017</span>
-      <span class="project__fact">- Started posting on Medium early 2018</span>
-      <span class="project__fact">- Currently migrating to self-hosted blog
-        (<a href="https://principleofexplosion.com">PrincipleofExplosion</a>)</span>
+      <span class="project__fact">- #{project.blog.first_study}</span>
+      <span class="project__fact">- #{project.blog.start_date}</span>
+      <span class="project__fact">- #{project.blog.current_state}</span>
     </div>
     <div class="project">
        <img class="project__picture" src="assets/projects/rails.png"
-                                     alt="Ruby on Rails logo" />
+                                     alt="#{alt.projects.rails}" />
        <div class="project__name">Rails</div>
-       <span class="project__fact">- Started using Rails late 2015</span>
-       <span class="project__fact">- Started exploring the Rails codebase late 2016</span>
-       <span class="project__fact">- First PR and contribution late 2017
-             (<a href="https://github.com/rails/rails/pull/31578">#31578</a>)</span>
+      <span class="project__fact">- #{project.rails.first_study}</span>
+      <span class="project__fact">- #{project.rails.start_date}</span>
+      <span class="project__fact">- #{project.rails.first_contribution}</span>
     </div>
   </div>
 
+  <!--
+    There wasn't any space left to put these in and they were a bit jokey so I
+    didn't feel bad about cutting them.
+    But you found them! See this as a fun bonus for your trouble!
+  -->
   <!-- <div class="testimonials"> -->
   <!--   <div class="testimonial"> -->
-  <!--     <div class="testimonial__author">Paul, collègue</div> -->
-  <!--     <div class="testimonial__quote">Vraiment, ta motivation à continuer d'apprendre, que ce soit pour le code ou en dehors, c'est inspirant, ça motive.</div> -->
+  <!--     <div class="testimonial__author">#{testimonials.paul.author}</div> -->
+  <!--     <div class="testimonial__quote">#{testimonials.paul.quote}</div> -->
   <!--   </div> -->
   <!--   <div class="testimonial"> -->
-  <!--     <div class="testimonial__author">Sylvain, professeur du Wagon</div> -->
-  <!--     <div class="testimonial__quote">S'il continue comme ça, je me fais pas de souci, d'ici quelques années c'est un meilleur développeur que moi.</div> -->
+  <!--     <div class="testimonial__author">#{testimonials.sylvain.author}</div> -->
+  <!--     <div class="testimonial__quote">#{testimonials.sylvain.quote}</div> -->
   <!--   </div> -->
   <!--   <div class="testimonial"> -->
-  <!--     <div class="testimonial__quote">Thank god, it works! You're saving my life dude, I owe you a beer sometime.</div> -->
+  <!--     <div class="testimonial__author">#{testimonials.rando.author}</div> -->
+  <!--     <div class="testimonial__quote">#{testimonials.rando.quote}</div> -->
   <!--   </div> -->
   <!-- </div> -->
 </body>
