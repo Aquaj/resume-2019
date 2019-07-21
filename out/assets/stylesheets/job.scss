@@ -1,0 +1,11 @@
+@import 'transition-mixin';
+
+$transition-size: 1em;
+$first-job-color: #999;
+$second-job-color: #bbb;
+
+.job {
+  @include alternating-with-transition($transition-size: 1em,
+                                       $first-color: #999,
+                                       $second-color: #bbb);
+}
