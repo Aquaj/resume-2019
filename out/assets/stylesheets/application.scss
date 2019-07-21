@@ -5,23 +5,32 @@
 @import 'job';
 @import 'projects';
 
+@import 'print';
+
 // In-browser displaying;
-html {
-  background-color: #333;
-  display: flex;
-  justify-content: center;
+@media not print {
+  html {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+  }
+
+  body {
+    background: #fff;
+    width: 2480px;
+    min-height: 3508px;
+    font-size: 64px;
+    margin: 4rem;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
-body {
-  background: #fff;
-  width: 2480px;
-  height: 3508px;
-  font-size: 64px;
-  margin: 4rem;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.disclaimer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
 }
-

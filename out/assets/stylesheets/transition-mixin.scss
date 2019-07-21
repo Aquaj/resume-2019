@@ -39,6 +39,7 @@
 
 
   &__transition {
+
     &:nth-of-type(2n) {
       @include transition($size: $transition-size, $to-color: $second-color);
     }

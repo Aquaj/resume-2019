@@ -1,5 +1,8 @@
 en:
   page_title: "Resumé — Jérémie Bonal"
+  resume_source_code:
+    You can see the code behind this resumé at
+    <a href="https://github.com/Aquaj/resume-2019/">https://github.com/Aquaj/resume-2019/</a>
   education:
     bachelor: "Bachelor degree in Computer Science — University of Bordeaux I"
     bootcamp: "Web development and Entrepreneurship Bootcamp — Le Wagon"

@@ -1,5 +1,8 @@
 fr:
   page_title: "CV — Jérémie Bonal"
+  resume_source_code:
+    Vous pouvez voir le code qui a généré ce CV à l'adresse suivante&#58;
+    <a href="https://github.com/Aquaj/resume-2019/">https://github.com/Aquaj/resume-2019/</a>
   education:
     bachelor: "Licence en Informatique — Université de Bordeaux 1"
     bootcamp: "Bootcamp en développement web et entreprenariat — Le Wagon"

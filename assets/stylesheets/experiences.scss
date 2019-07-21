@@ -17,11 +17,12 @@ $experience-color: #fbf4e7;
     display: grid;
     grid-template-areas: "picture name        technologies"
                          "picture description description";
-    margin: 0.3em;
+    margin: 0.5em;
+    margin-bottom: 1em;
   }
 
   &__picture {
-    --size: 90%;
+    --size: 4em;
 
     grid-area: picture;
 
@@ -30,6 +31,7 @@ $experience-color: #fbf4e7;
   }
 
   &__name {
+    padding: 0.4em 0;
     font-size: 1.5em;
     grid-area: name;
 
