@@ -20,8 +20,39 @@ body > * {
   flex-basis: 20%; }
 
 .identity {
-  display: flex;
-  justify-content: space-between; }
+  display: grid;
+  grid-template-areas: 'interests name    photo' 'interests contact photo';
+  grid-gap: 1em 0.5em;
+  grid-template-columns: min-content auto min-content; }
+  .identity__name {
+    grid-area: name;
+    display: flex;
+    align-items: center;
+    font-size: 2.5em; }
+  .identity__interests {
+    grid-area: interests;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 6em;
+    margin: 0;
+    border: 1rem solid black; }
+  .identity__contact-box {
+    grid-area: contact;
+    display: grid;
+    grid-gap: 0.4em 0.8em;
+    grid-template-columns: max-content auto; }
+  .identity__contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.8em; }
+  .identity__photo {
+    grid-area: photo;
+    object-fit: cover;
+    width: 35rem;
+    height: 35rem; }
 
 .technologies {
   display: flex; }
