@@ -58,7 +58,8 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 .education__picture {
   margin: 0.3em;
   width: 1.8em;
@@ -68,69 +69,99 @@
   display: flex;
   flex-direction: column; }
 
-.experience__info {
-  display: grid;
-  grid-template-areas: "picture name        technologies" "picture description description";
-  grid-gap: 0.5em;
-  margin: 0.3em; }
-.experience__picture {
-  grid-area: picture; }
-.experience__name {
-  font-size: 1.5em;
-  grid-area: name; }
-.experience__technologies {
-  grid-area: technologies; }
-.experience__description {
-  font-size: 0.8em;
-  grid-area: description; }
-.experience__technology-icon {
-  font-size: 0; }
-
-.job:nth-of-type(2n) {
+.experience {
   background-color: #999; }
-.job:nth-of-type(2n+1) {
-  padding-top: 1em;
-  background-color: #bbb; }
-.job__transition:nth-of-type(2n) {
-  --size: 1em;
-  display: block;
-  position: relative; }
-  .job__transition:nth-of-type(2n):before {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 50%;
-    height: var(--size);
-    content: " ";
-    background: linear-gradient(to left bottom, #bbb 50%, rgba(0, 0, 0, 0) 50%); }
-  .job__transition:nth-of-type(2n):after {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    width: 50%;
-    height: var(--size);
-    content: " ";
-    background: linear-gradient(to right bottom, #bbb 50%, rgba(0, 0, 0, 0) 50%); }
-.job__transition:nth-of-type(2n+1) {
-  --size: 1em;
-  display: block;
-  position: relative; }
-  .job__transition:nth-of-type(2n+1):before {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 50%;
-    height: var(--size);
-    content: " ";
-    background: linear-gradient(to left bottom, #999 50%, rgba(0, 0, 0, 0) 50%); }
-  .job__transition:nth-of-type(2n+1):after {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    width: 50%;
-    height: var(--size);
-    content: " ";
-    background: linear-gradient(to right bottom, #999 50%, rgba(0, 0, 0, 0) 50%); }
+  .experience__info {
+    display: grid;
+    grid-template-areas: "picture name        technologies" "picture description description";
+    grid-gap: 0.5em;
+    margin: 0.3em; }
+  .experience__picture {
+    grid-area: picture; }
+  .experience__name {
+    font-size: 1.5em;
+    grid-area: name; }
+  .experience__technologies {
+    grid-area: technologies; }
+  .experience__description {
+    font-size: 0.8em;
+    grid-area: description; }
+  .experience__technology-icon {
+    font-size: 0; }
+
+.job {
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-areas: "title            title" "period           period" "responsibilities results";
+  grid-template-columns: 50% 50%;
+  --tasks-font-size: 0.7em; }
+  .job:nth-of-type(2n) {
+    background-color: #999;
+    padding-bottom: calc(2em/2); }
+  .job:nth-of-type(2n+1) {
+    padding-top: 2em;
+    background-color: #bbb; }
+  .job__transition:nth-of-type(2n) {
+    --size: 2em;
+    display: block;
+    position: relative; }
+    .job__transition:nth-of-type(2n):before {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 50%;
+      height: var(--size);
+      content: " ";
+      background: linear-gradient(to left bottom, #bbb 50%, rgba(0, 0, 0, 0) 50%); }
+    .job__transition:nth-of-type(2n):after {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      width: 50%;
+      height: var(--size);
+      content: " ";
+      background: linear-gradient(to right bottom, #bbb 50%, rgba(0, 0, 0, 0) 50%); }
+  .job__transition:nth-of-type(2n+1) {
+    --size: 2em;
+    display: block;
+    position: relative; }
+    .job__transition:nth-of-type(2n+1):before {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 50%;
+      height: var(--size);
+      content: " ";
+      background: linear-gradient(to left bottom, #999 50%, rgba(0, 0, 0, 0) 50%); }
+    .job__transition:nth-of-type(2n+1):after {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      width: 50%;
+      height: var(--size);
+      content: " ";
+      background: linear-gradient(to right bottom, #999 50%, rgba(0, 0, 0, 0) 50%); }
+  .job__title {
+    grid-area: title;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0 0 0; }
+  .job__period {
+    grid-area: period;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0.5em 0;
+    font-size: 0.7em; }
+  .job__responsibilities {
+    grid-area: responsibilities;
+    padding: 0 0.5em;
+    text-align: center;
+    font-size: var(--tasks-font-size); }
+  .job__results {
+    grid-area: results;
+    padding: 0 0.5em;
+    text-align: center;
+    font-size: var(--tasks-font-size); }
 
 html {
   background-color: #333;
@@ -143,12 +174,12 @@ body {
   height: 3508px;
   font-size: 72px;
   margin: 4rem;
+  padding: 1em;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
 body > * {
-  margin: 1rem;
   background-color: #eee;
   flex-basis: 20%; }

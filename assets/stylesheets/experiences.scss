@@ -1,3 +1,5 @@
+$experience-color: #999;
+
 .experiences {
   &__experience {
     display: flex;
@@ -6,6 +8,8 @@
 }
 
 .experience {
+  background-color: #{$experience-color};
+
   &__info {
     display: grid;
     grid-template-areas: "picture name        technologies"
