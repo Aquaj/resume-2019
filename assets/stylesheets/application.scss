@@ -1,4 +1,5 @@
 @import 'identity';
+@import 'technologies';
 @import 'education';
 
 // Junk styling to better visualize until I'm done styling
@@ -25,15 +26,5 @@ body > * {
   margin: 1rem;
   background-color: #eee;
   flex-basis: 20%;
-}
-
-.technologies {
-  display: flex;
-}
-
-.technologies > * {
-  background-color: #fff;
-  flex: 1;
-  margin: 0.3em;
 }
 

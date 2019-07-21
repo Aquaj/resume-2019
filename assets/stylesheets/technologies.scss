@@ -1,0 +1,26 @@
+.technologies {
+  display: flex;
+
+  &__technology {
+    flex: 1;
+
+    margin: 0.3em;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__technology-image {
+    height: 5em;
+    object-fit: contain;
+    width: 90%;
+  }
+
+  &__technology-name {
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+}
