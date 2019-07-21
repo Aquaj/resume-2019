@@ -10,28 +10,27 @@
   <div class="identity">
     <div class="identity__name">Jérémie Bonal</div>
     <div class="identity__contact-box">
-      <div class="identity__contact identity__contact--linkedin">
-        <a href="https://linkedin.com/in/jérémie-bonal-0b6931119/">/in/jérémie-bonal-0b6931119/</a>
-      </div>
-      <div class="identity__contact identity__contact--github">
-        <a href="https://github.com/Aquaj">Aquaj</a>
-      </div>
-      <div class="identity__contact identity__contact--email">
-        <a href="mailto:jeremie.bonal@gmail.com">jeremie.bonal@gmail.com</a>
-      </div>
-      <div class="identity__contact identity__contact--telephone">
-        <a href="tel:+33659307252">+33659307252</a>
-      </div>
+      <a href="https://linkedin.com/in/jérémie-bonal-0b6931119/" class="identity__contact">
+        /in/jérémie-bonal-0b6931119/
+      </a>
+      <a href="https://github.com/Aquaj" class="identity__contact">Aquaj</a>
+      <a href="mailto:jeremie.bonal@gmail.com" class="identity__contact">
+        jeremie.bonal@gmail.com
+      </a>
+    <a href="tel:+33659307252" class="identity__contact">
+      +33659307252
+    </a>
     </div>
-    <ul class="identity__interests">
-      Interests:
-      <div class="identity__interest-box">
+    <div class="identity__interests">
+      Interests include:
+      <ul class="identity__interest-box">
         <li class="identity__interest">Languages</li>
         <li class="identity__interest">Design</li>
         <li class="identity__interest">Philosophy</li>
         <li class="identity__interest">Science</li>
-      </div>
-    </ul>
+        <li class="identity__interest">Cooking</li>
+      </ul>
+    </div>
     <img src="assets/profile.jpg" class="identity__photo"
                                   alt="Jérémie Bonal's profile picture" />
   </div>
@@ -123,7 +122,7 @@
           Developer
         </div>
         <div class="job__period">
-          2016 — 2018
+          2016 — early 2018
         </div>
         <div class="job__responsibilities">
           <span class="job__fact">Feature development</span>
@@ -141,11 +140,10 @@
           CTO
         </div>
         <div class="job__period">
-          2018 — present
+          early 2018 — present
         </div>
         <div class="job__responsibilities">
           <span class="job__fact">Management of a team of 7 developers</span>
-          <span class="job__fact">Interviewing and hiring of developers</span>
           <span class="job__fact">Formation and mentorship of junior developers</span>
           <span class="job__fact">Exchanges with technical and commercial partners</span>
           <span class="job__fact">Decision-making on the technical direction of projects</span>
@@ -163,29 +161,32 @@
   </div>
 
   <div class="projects">
-    <div class="title">Projects and contributions</div>
+    <div class="projects__title">Projects and Contributions</div>
     <div class="project">
+       <img class="project__picture" src="assets/projects/ruby.svg"
+                                     alt="Ruby logo" />
       <div class="project__name">Ruby</div>
-        <div class="project_description">
-        Started teaching myself the Ruby codebase mid-2019
-        First issue opened on the Ruby bug tracker mid-2019
-      </div>
+      <span class="project__fact">- Started exploring the Ruby codebase mid-2019</span>
+      <span class="project__fact">- First issue opened on the Ruby bug tracker mid-2019
+             (<a href="https://bugs.ruby-lang.org/issues/15991">#15991</a>)</span>
     </div>
-    <div class="projects">
+    <div class="project">
+       <img class="project__picture" src="assets/projects/principleofexplosion.png"
+                                     alt="Principle of Explosion logo" />
       <div class="project__name">Blog</div>
-      <div class="project_description">
-        Started compiling blogging ideas mid 2017
-        Started posting on Medium early 2018
-        Currently migrating to own blog
-      </div>
+      <span class="project__fact">- Started compiling blogging ideas mid 2017</span>
+      <span class="project__fact">- Started posting on Medium early 2018</span>
+      <span class="project__fact">- Currently migrating to self-hosted blog
+        (<a href="https://principleofexplosion.com">PrincipleofExplosion</a>)</span>
     </div>
-    <div class="projects">
-      <div class="project__name">Rails</div>
-      <div class="project_description">
-        Started using Rails late 2015
-        Started teaching myself the Rails codebase late 2016
-        First PR and contribution late 2017 (#31578)
-      </div>
+    <div class="project">
+       <img class="project__picture" src="assets/projects/rails.png"
+                                     alt="Ruby on Rails logo" />
+       <div class="project__name">Rails</div>
+       <span class="project__fact">- Started using Rails late 2015</span>
+       <span class="project__fact">- Started exploring the Rails codebase late 2016</span>
+       <span class="project__fact">- First PR and contribution late 2017
+             (<a href="https://github.com/rails/rails/pull/31578">#31578</a>)</span>
     </div>
   </div>
 

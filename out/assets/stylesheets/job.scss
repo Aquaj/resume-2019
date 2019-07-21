@@ -5,7 +5,7 @@
 
   @include alternating-with-transition($transition-size: 1em,
                                        $first-color: $experience-color,
-                                       $second-color: #bbb);
+                                       $second-color: #E5DCCA);
 
   display: grid;
   grid-template-areas: "title            title"

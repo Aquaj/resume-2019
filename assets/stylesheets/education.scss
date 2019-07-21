@@ -2,21 +2,23 @@
   &__place {
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__diploma {
-    flex: 1;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    line-height: 1.5em;
   }
 
   &__picture {
-    margin: 0.3em;
-    width: 1.8em;
-    height: 1.8em;
-    padding: 0 1em;
+    --size: 1.5em;
+    margin: 0.2em;
+    width: var(--size);
+    height: var(--size);
+    padding: 0 0.5em;
   }
 }

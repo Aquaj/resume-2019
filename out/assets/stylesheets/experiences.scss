@@ -1,4 +1,4 @@
-$experience-color: #999;
+$experience-color: #fbf4e7;
 
 .experiences {
   &__experience {
@@ -21,7 +21,12 @@ $experience-color: #999;
   }
 
   &__picture {
+    --size: 90%;
+
     grid-area: picture;
+
+    margin: auto;
+    height: var(--size);
   }
 
   &__name {
