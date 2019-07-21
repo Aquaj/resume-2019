@@ -1,24 +1,3 @@
-html {
-  background-color: #333;
-  display: flex;
-  justify-content: center; }
-
-body {
-  background: #fff;
-  width: 2480px;
-  height: 3508px;
-  font-size: 72px;
-  margin: 4rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-body > * {
-  margin: 1rem;
-  background-color: #eee;
-  flex-basis: 20%; }
-
 .identity {
   display: grid;
   grid-template-areas: 'interests name    photo' 'interests contact photo';
@@ -53,6 +32,27 @@ body > * {
     object-fit: cover;
     width: 35rem;
     height: 35rem; }
+
+html {
+  background-color: #333;
+  display: flex;
+  justify-content: center; }
+
+body {
+  background: #fff;
+  width: 2480px;
+  height: 3508px;
+  font-size: 72px;
+  margin: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+body > * {
+  margin: 1rem;
+  background-color: #eee;
+  flex-basis: 20%; }
 
 .technologies {
   display: flex; }
