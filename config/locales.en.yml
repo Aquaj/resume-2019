@@ -43,7 +43,7 @@ en:
     blog:
       first_study: "Started compiling article ideas mid 2017."
       start_date: "Started posting on Medium early 2018."
-      current_state: "Currently migrating to self-hosted blog (<a href=\"https://principleofexplosion.com\">PrincipleofExplosion</a>)"
+      current_state: "Currently migrating to self-hosted blog (<a href=\"https://principleofexplosion.com\">Principle&nbsp;of&nbsp;Explosion</a>)"
     ruby:
       start_date: "Started exploring the Ruby codebase mid-2019."
       first_contribution: "First issue opened on the Ruby bug tracker mid-2019 (<a href=\"https://bugs.ruby-lang.org/issues/15991\">#15991</a>)"
