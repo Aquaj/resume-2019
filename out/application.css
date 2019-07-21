@@ -33,6 +33,19 @@
     width: 35rem;
     height: 35rem; }
 
+.education__place {
+  width: 100%;
+  display: flex; }
+.education__diploma {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.education__picture {
+  margin: 0.5em;
+  width: 1.8em;
+  height: 1.8em; }
+
 html {
   background-color: #333;
   display: flex;
