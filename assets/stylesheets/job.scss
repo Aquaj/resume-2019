@@ -3,7 +3,7 @@
 .job {
   padding-bottom: 1em;
 
-  @include alternating-with-transition($transition-size: 2em,
+  @include alternating-with-transition($transition-size: 1em,
                                        $first-color: $experience-color,
                                        $second-color: #bbb);
 
@@ -13,14 +13,19 @@
                       "responsibilities results";
   grid-template-columns: 50% 50%;
 
-  --tasks-font-size: 0.7em;
-
   &__title {
     grid-area: title;
 
     width: 100%;
     text-align: center;
     padding: 0.5em 0 0 0;
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+    &--no-transition {
+      padding: 0;
+    }
   }
 
   &__period {
@@ -28,24 +33,30 @@
 
     width: 100%;
     text-align: center;
-    padding: 0 0 0.5em 0;
+    padding: 0 0 0.7em 0;
 
-    font-size: 0.7em;
+    font-size: 0.8em;
+  }
+
+  @mixin job-section {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 2em;
+    font-size: 0.8em;
   }
 
   &__responsibilities {
     grid-area: responsibilities;
-
-    padding: 0 0.5em;
-    text-align: center;
-    font-size: var(--tasks-font-size);
+    @include job-section;
   }
 
   &__results {
     grid-area: results;
+    @include job-section;
+  }
 
-    padding: 0 0.5em;
-    text-align: center;
-    font-size: var(--tasks-font-size);
+  &__fact {
+    margin-bottom: 0.3em;
   }
 }

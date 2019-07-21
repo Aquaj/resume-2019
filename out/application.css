@@ -28,28 +28,28 @@
     align-items: center;
     font-size: 0.8em; }
   .identity__photo {
+    --size: 7em;
     grid-area: photo;
     object-fit: cover;
-    width: 35rem;
-    height: 35rem; }
+    width: var(--size);
+    height: var(--size); }
 
 .technologies {
   display: flex; }
   .technologies__technology {
     flex: 1;
-    margin: 0.3em;
-    background-color: #fff;
+    margin: 0.2em 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
   .technologies__technology-image {
-    height: 5em;
+    height: 4em;
     object-fit: contain;
     width: 90%; }
   .technologies__technology-name {
     text-align: center;
-    margin-bottom: 0.2em; }
+    margin: 0.2em 0; }
 
 .education__place {
   width: 100%;
@@ -63,7 +63,8 @@
 .education__picture {
   margin: 0.3em;
   width: 1.8em;
-  height: 1.8em; }
+  height: 1.8em;
+  padding: 0 1em; }
 
 .experiences__experience {
   display: flex;
@@ -72,19 +73,25 @@
 .experience {
   background-color: #999; }
   .experience__info {
+    padding: 0.5em;
+    padding-bottom: 0em;
     display: grid;
     grid-template-areas: "picture name        technologies" "picture description description";
-    grid-gap: 0.5em;
     margin: 0.3em; }
   .experience__picture {
     grid-area: picture; }
   .experience__name {
     font-size: 1.5em;
-    grid-area: name; }
+    grid-area: name;
+    display: flex;
+    align-items: center; }
   .experience__technologies {
-    grid-area: technologies; }
+    grid-area: technologies;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
   .experience__description {
-    font-size: 0.8em;
+    font-size: 0.9em;
     grid-area: description; }
   .experience__technology-icon {
     font-size: 0; }
@@ -93,16 +100,15 @@
   padding-bottom: 1em;
   display: grid;
   grid-template-areas: "title            title" "period           period" "responsibilities results";
-  grid-template-columns: 50% 50%;
-  --tasks-font-size: 0.7em; }
+  grid-template-columns: 50% 50%; }
   .job:nth-of-type(2n) {
     background-color: #999;
-    padding-bottom: calc(2em/2); }
+    padding-bottom: calc(1em/4); }
   .job:nth-of-type(2n+1) {
-    padding-top: 2em;
+    padding-top: 1em;
     background-color: #bbb; }
   .job__transition:nth-of-type(2n) {
-    --size: 2em;
+    --size: 1em;
     display: block;
     position: relative; }
     .job__transition:nth-of-type(2n):before {
@@ -122,7 +128,7 @@
       content: " ";
       background: linear-gradient(to right bottom, #bbb 50%, rgba(0, 0, 0, 0) 50%); }
   .job__transition:nth-of-type(2n+1) {
-    --size: 2em;
+    --size: 1em;
     display: block;
     position: relative; }
     .job__transition:nth-of-type(2n+1):before {
@@ -145,23 +151,31 @@
     grid-area: title;
     width: 100%;
     text-align: center;
-    padding: 0.5em 0 0 0; }
+    padding: 0.5em 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold; }
+    .job__title--no-transition {
+      padding: 0; }
   .job__period {
     grid-area: period;
     width: 100%;
     text-align: center;
-    padding: 0 0 0.5em 0;
-    font-size: 0.7em; }
+    padding: 0 0 0.7em 0;
+    font-size: 0.8em; }
   .job__responsibilities {
     grid-area: responsibilities;
-    padding: 0 0.5em;
-    text-align: center;
-    font-size: var(--tasks-font-size); }
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    font-size: 0.8em; }
   .job__results {
     grid-area: results;
-    padding: 0 0.5em;
-    text-align: center;
-    font-size: var(--tasks-font-size); }
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    font-size: 0.8em; }
+  .job__fact {
+    margin-bottom: 0.3em; }
 
 html {
   background-color: #333;
@@ -172,14 +186,10 @@ body {
   background: #fff;
   width: 2480px;
   height: 3508px;
-  font-size: 72px;
+  font-size: 64px;
   margin: 4rem;
   padding: 1em;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-body > * {
-  background-color: #eee;
-  flex-basis: 20%; }

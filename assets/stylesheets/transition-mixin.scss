@@ -29,7 +29,7 @@
 @mixin alternating-with-transition($transition-size, $first-color, $second-color) {
   &:nth-of-type(2n) {
     background-color: #{$first-color};
-    padding-bottom: calc(#{$transition-size}/2);
+    padding-bottom: calc(#{$transition-size}/4);
   }
 
   &:nth-of-type(2n+1) {

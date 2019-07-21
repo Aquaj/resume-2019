@@ -16,17 +16,12 @@ body {
   background: #fff;
   width: 2480px;
   height: 3508px;
-  font-size: 72px;
+  font-size: 64px;
   margin: 4rem;
   padding: 1em;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-body > * {
-  background-color: #eee;
-  flex-basis: 20%;
 }
 

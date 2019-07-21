@@ -4,8 +4,7 @@
   &__technology {
     flex: 1;
 
-    margin: 0.3em;
-    background-color: #fff;
+    margin: 0.2em 1em;
 
     display: flex;
     flex-direction: column;
@@ -14,13 +13,13 @@
   }
 
   &__technology-image {
-    height: 5em;
+    height: 4em;
     object-fit: contain;
     width: 90%;
   }
 
   &__technology-name {
     text-align: center;
-    margin-bottom: 0.2em;
+    margin: 0.2em 0;
   }
 }

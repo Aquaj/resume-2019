@@ -44,9 +44,10 @@
   }
 
   &__photo {
+    --size: 7em;
     grid-area: photo;
     object-fit: cover;
-    width: 35rem;
-    height: 35rem;
+    width: var(--size);
+    height: var(--size);
   }
 }
