@@ -1,0 +1,38 @@
+.experiences {
+  &__experience {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.experience {
+  &__info {
+    display: grid;
+    grid-template-areas: "picture name        technologies"
+                         "picture description description";
+    grid-gap: 0.5em;
+    margin: 0.3em;
+  }
+
+  &__picture {
+    grid-area: picture;
+  }
+
+  &__name {
+    font-size: 1.5em;
+    grid-area: name;
+  }
+
+  &__technologies {
+    grid-area: technologies;
+  }
+
+  &__description {
+    font-size: 0.8em;
+    grid-area: description;
+  }
+
+  &__technology-icon {
+    font-size: 0;
+  }
+}

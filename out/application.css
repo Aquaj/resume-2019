@@ -64,6 +64,28 @@
   width: 1.8em;
   height: 1.8em; }
 
+.experiences__experience {
+  display: flex;
+  flex-direction: column; }
+
+.experience__info {
+  display: grid;
+  grid-template-areas: "picture name        technologies" "picture description description";
+  grid-gap: 0.5em;
+  margin: 0.3em; }
+.experience__picture {
+  grid-area: picture; }
+.experience__name {
+  font-size: 1.5em;
+  grid-area: name; }
+.experience__technologies {
+  grid-area: technologies; }
+.experience__description {
+  font-size: 0.8em;
+  grid-area: description; }
+.experience__technology-icon {
+  font-size: 0; }
+
 html {
   background-color: #333;
   display: flex;
