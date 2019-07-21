@@ -1,0 +1,32 @@
+html {
+  background-color: #333;
+  display: flex;
+  justify-content: center; }
+
+body {
+  background: #fff;
+  width: 2480px;
+  height: 3508px;
+  font-size: 72px;
+  margin: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+body > * {
+  margin: 1rem;
+  background-color: #eee;
+  flex-basis: 20%; }
+
+.identity {
+  display: flex;
+  justify-content: space-between; }
+
+.technologies {
+  display: flex; }
+
+.technologies > * {
+  background-color: #fff;
+  flex: 1;
+  margin: 0.3em; }
