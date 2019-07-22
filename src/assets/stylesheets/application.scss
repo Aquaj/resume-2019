@@ -17,9 +17,9 @@
 
   body {
     background: #fff;
-    width: 2480px;
-    min-height: 3508px;
-    font-size: 64px;
+    width: 595px; // 2480px; -- 300 dpi
+    min-height: 842px; // 3508px; -- 300dpi
+    font-size: 16px; // 64px; -- 300dpi
     margin: 4rem;
     padding: 1em;
     box-sizing: border-box;
