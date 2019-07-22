@@ -11,6 +11,6 @@
   - `assets/stylesheets/*.scss` to adjust styles
   - `index.html` to adjust markup
   - `config/locale.*.yml` to adjust content
-- Remember to run `./compile` after each change.
+- Remember to run `bin/compile` after each change.
 
 - The results are in `out/`.
