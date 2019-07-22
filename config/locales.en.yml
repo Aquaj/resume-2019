@@ -65,6 +65,11 @@ en:
       author: "Sylvain, former teacher at Le Wagon"
       quote: "If he keeps going the way he's headed, no doubt he'll be a better developer than me in a couple of years."
   alt:
+    icon:
+      github: "Github"
+      linkedin: "LinkedIn"
+      mail: "E-mail"
+      phone: "Phone"
     education:
       bordeaux1: "University of Bordeaux 1's logo"
       wagon: "Le Wagon's Logo"

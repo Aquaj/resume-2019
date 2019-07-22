@@ -68,8 +68,8 @@ fr:
     icon:
       github: "Github"
       linkedin: "LinkedIn"
-      mail: "Mail"
-      phone: "Phone"
+      mail: "Email"
+      phone: "Téléphone"
     education:
       bordeaux1: "Logo de l'University Bordeaux 1"
       wagon: "Logo du Wagon"
