@@ -14,3 +14,7 @@
 - Remember to run `bin/compile` from the root of the repo after each change.
 
 - The results are at the root of the repository.
+
+## Give it a look
+
+This repository is hosted on GitHub Pages: [here you go](https://aquaj.github.io/resume-2019).
