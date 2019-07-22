@@ -65,6 +65,11 @@ fr:
       author: "Sylvain, ancien professeur au Wagon"
       quote: "S'il continue à ce rythme d'ici quelques années c'est un meilleur développeur que moi c'est sûr."
   alt:
+    icon:
+      github: "Github"
+      linkedin: "LinkedIn"
+      mail: "Mail"
+      phone: "Phone"
     education:
       bordeaux1: "Logo de l'University Bordeaux 1"
       wagon: "Logo du Wagon"
